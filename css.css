@@ -1,0 +1,132 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Handlee|Rochester|Satisfy');
+
+
+/* Body and Sections */
+
+body {
+	background-color: #5b3e2d;
+}
+
+article {
+	margin: 1%;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #e5c28e;
+}
+
+section {
+	margin: 2%;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #5b3e2d;
+	overflow: auto;
+}
+
+div {
+	display: none;
+}
+
+
+/* Headings and Paragraph */
+
+h1 {
+	font-family: Rochester;
+	text-align: center;
+	color: #e5c28e;
+}
+
+h2 {
+	font-family: Rochester;
+	color: #e5c28e;
+}
+
+p {
+	margin: 2%;
+	font-family: sans-serif;
+	color: #e5c28e;
+	word-wrap: break-word;
+}
+
+
+/* Images */
+
+img.float {
+	float:left;
+	padding: 5px;
+}
+
+
+/* Nav */
+
+nav {
+	margin: 1%;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #e5c28e;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+	font-family: Handlee, sans-serif;
+	font-weight: bold;
+}
+
+nav ul li {
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+
+/* Interactive */
+
+button {
+	padding: 5px;
+	border-radius: 3px;
+	border: none;
+	display: inline-block;
+	background-color: #e5c28e;
+	text-align: center;
+	color: #5b3e2d;
+	transition: all 0.5s;
+	cursor: pointer;
+	width: 100px;
+	margin: 1%;
+}
+
+button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+} 
+
+button:hover span {
+	padding-right: 25px;
+}
+
+button:hover span:after {
+	opacity: 1;
+	right: 10px;
+}
